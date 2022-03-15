@@ -1,0 +1,106 @@
+GET http://localhost:8000/user/user_api
+Content-Type: application/json
+
+###
+POST http://localhost:8000/user/user_api
+Content-Type: application/json
+
+{
+    "first_name": "nguyen",
+    "last_name": "tri",
+    "birth_date": "2001-04-04",
+    "gender": "Male",
+    "phone": "019201",
+    "avatar": "2323",
+    "email": "nguyentri.alan@gmail.com",
+    "password": "123"
+}
+
+###
+POST http://localhost:8000/account/auth
+Content-Type: application/json
+
+{
+    "email": "nguyentri.alan@gmail.com",
+    "password": "123"
+}
+
+###
+POST http://localhost:8000/account/auth
+Content-Type: application/json
+
+{
+    "email": "2du@gmail.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:8000/user/auth
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IlM0VVVVWFpKUktaOVA1NjkiLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0wOSAyMTo1Nzo1Ni40MDkwNTQifQ.Ud_8G8vPbMg3X0Z2FeYrzfr8EJacFd90ZQJoHD76pak
+
+{
+    "content": "Test api"
+}
+
+###
+GET http://localhost:8000/post/post_api
+Content-Type: application/json
+
+###
+GET http://localhost:8000/post/post_api
+Content-Type: application/json
+
+###
+GET http://localhost:8000/post/user?id=4A18NJSLBI2357VJ
+Content-Type: application/json
+
+###
+GET http://localhost:8000/user/info?id=4A18NJSLBI2357VJ
+Content-Type: application/json
+
+###
+GET http://localhost:8000/hobby/hobby_api
+Content-Type: application/json
+
+###
+GET http://localhost:8000/post/all
+Content-Type: application/json
+###
+POST http://localhost:8000/hobby/hobby_api
+Content-Type: application/json
+
+{
+    "name": "music",
+    "image": "./common/images/hobbies/music.jpg"
+}
+
+###
+POST http://localhost:8000/friend_request/request_api
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IlM0VVVVWFpKUktaOVA1NjkiLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0wOSAyMTo1Nzo1Ni40MDkwNTQifQ.Ud_8G8vPbMg3X0Z2FeYrzfr8EJacFd90ZQJoHD76pak
+
+{
+    "to": "H8Q6QG8BKLULD7GT"
+}
+
+###
+GET http://localhost:8000/friend_request/auth
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IlM0VVVVWFpKUktaOVA1NjkiLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0wOSAyMTo1Nzo1Ni40MDkwNTQifQ.Ud_8G8vPbMg3X0Z2FeYrzfr8EJacFd90ZQJoHD76pak
+
+###
+GET http://localhost:8000/friend_request/auth
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IkNISTlGTFJZNDhYTkI0OU8iLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMyAyMjozNTozMi4xNTU5MzYifQ.oU0HpLgqRbzHAkF0pHvDWv5iTsg3TZ-ZXQKXBaK0Ltw
+
+###
+POST http://localhost:8000/friend_request/auth
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IkNISTlGTFJZNDhYTkI0OU8iLCJjcmVhdGVkX2F0IjoiMjAyMi0wMy0xMyAyMjozNTozMi4xNTU5MzYifQ.oU0HpLgqRbzHAkF0pHvDWv5iTsg3TZ-ZXQKXBaK0Ltw
+
+{
+    "id": "1"
+}
+
+
